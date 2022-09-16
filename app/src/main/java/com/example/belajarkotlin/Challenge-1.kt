@@ -107,6 +107,7 @@ fun outline(){
     var k = 0
 
     for (i in 1..rows) {
+
         for (space in 1..rows - i) {
             print("  ")
         }
@@ -117,7 +118,7 @@ fun outline(){
             } else {
                 if(k % 2 == 0) print("* ") else print("  ")
             }
-            ++k
+            k++
         }
 
         println()
@@ -128,15 +129,15 @@ fun outline(){
 fun main() {
     var segitiga = Segitiga(5, 5)
     segitiga.atas()
-    println()
-    segitiga.bawah()
-
-    println()
-    var segitigaAtasBawah = SegitigaAtasBawah(5, 5)
-    segitigaAtasBawah.atasbawah()
-
-    println()
-    CreateX()
+//    println()
+//    segitiga.bawah()
+//
+//    println()
+//    var segitigaAtasBawah = SegitigaAtasBawah(5, 5)
+//    segitigaAtasBawah.atasbawah()
+//
+//    println()
+//    CreateX()
 
     println()
     outline()
